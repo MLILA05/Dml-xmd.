@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DML-XMD | Official Bot Repository</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- ✅ Updated Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #0f172a, #1e293b, #0f172a);
+      background-size: 300% 300%;
+      animation: bgMove 15s ease infinite;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    @keyframes bgMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #38bdf8;
+      text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      letter-spacing: 0.5px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 25px;
+      margin: 20px 0;
+      width: 100%;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(56, 189, 248, 0.6);
+      box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);
+    }
+
+    .card h2 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #e2e8f0;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a.button:hover {
+      background: #0ea5e9;
+      color: white;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      background: rgba(255, 255, 255, 0.05);
+      color: #94a3b8;
+    }
+
+    /* Floating buttons */
+    .float-buttons {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 999;
+    }
+
+    .float-buttons a {
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      font-size: 1.6rem;
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+      transition: 0.3s;
+    }
+
+    .float-buttons a:hover {
+      transform: scale(1.1);
+      background: #0ea5e9;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      main {
+        padding: 20px;
+      }
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>DML-XMD</h1>
+    <p>Advanced WhatsApp Multi-Device Bot Secure, Fast & Reliable</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>📘 GitHub Repository</h2>
+      <p>Explore the official DML-XMD repository to access full source code, contribute, or deploy your own version.</p>
+      <a href="https://github.com/MLILA05/DML-XMD" target="_blank" class="button">View Repository</a>
+    </div>
+
+    <div class="card">
+      <h2>🔑 Pair Code Site</h2>
+      <p>Generate your WhatsApp Session ID securely to link your DML-XMD bot.</p>
+      <a href="https://zokou-session.onrender.com/" target="_blank" class="button">Open Pair Code</a>
+    </div>
+
+    <div class="card">
+      <h2>👨‍💻 Developer Session Files</h2>
+      <p>Access or manage developer session files to integrate DML-XMD with your projects.</p>
+      <a href="https://github.com/MLILA05/Zokou" target="_blank" class="button">View Developer Files</a>
+    </div>
+  </main>
+
+  <footer>© 2025 DML-XMD | All Rights Reserved</footer>
+
+  <!-- ✅ Floating Contact Buttons -->
+  <div class="float-buttons">
+    <!-- WhatsApp Channel -->
+    <a
+      href="https://whatsapp.com/channel/0029VbBTnYe4yltFjGWi8K1g"
+      target="_blank"
+      title="Join WhatsApp Channel"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Need Help -->
+    <a
+      href="https://dml-contact.vercel.app"
+      target="_blank"
+      title="Need Help?"
+    >
+      <i class="fa-solid fa-headset"></i>
+    </a>
+  </div>
+</body>
+</html>
